@@ -1,0 +1,80 @@
+.Projects{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.flipCard {
+  background-color: transparent;
+  width: 150px;
+  height: 160px;
+  perspective: 1000px;
+  font-size: x-large;
+  margin-right: 100px;
+}
+button.live {
+  margin-top: 30px;
+}
+.Description{
+  margin-top: 10px;
+  line-height: 30px;
+}
+.flipCardBack p{
+    margin-top: 20px;
+    font-size: larger;
+}
+.flipCardInner {
+  position: relative;
+  width: 175%;
+  height: 175%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(30, 108, 233, 0.671);
+  
+}
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+.flipCardFront, .flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.flipCardFront {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.flipCardBack {
+  background-color: #181818d2;
+  color: white;
+  transform: rotateY(180deg);
+}
+h2{
+  text-align: center;
+}
+span{
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.Cardbutton{
+  margin:20px; 
+}
+button:hover{
+    background: cornsilk;
+   color: #000!important;
+}
+.Cardbutton button{
+  border-radius: 20px;
+  width:120px;
+  height: 35px;
+}

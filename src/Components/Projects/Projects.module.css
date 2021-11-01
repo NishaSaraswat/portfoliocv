@@ -1,0 +1,24 @@
+h1.Heading{
+  font-size: 60px;
+  font-family: monospace, Poppins;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.Heading p{
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+.ProjectBox{
+  border-radius:10px;
+  width:100%;
+  padding:55px;
+  background:#191919;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+}
+.ProjectBox:hover{
+  transform: translateY(5px);
+  background-image: linear-gradient(90deg,#f61b10,#ef0963);
+}
