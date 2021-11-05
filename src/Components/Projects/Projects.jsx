@@ -5,6 +5,7 @@ import project1 from '../../Images/project1.png'
 import project2 from '../../Images/project2.png'
 import project3 from '../../Images/project3.png'
 import project4 from '../../Images/project4.png'
+import project5 from '../../Images/project5.png'
 
 
 function Projects(props) {
@@ -28,7 +29,7 @@ function Projects(props) {
             </div>
           <div className="col__3">
               <div className={classes.ProjectBox}>
-                <Card img={project1} title="Photonic" description="A photo chat app built in react, javascript, mongoDB (Mongoosy) and Nodejs" />
+                <Card img={project5} title="Photonic" description="A photo chat app built in react, javascript, mongoDB (Mongoosy) and Nodejs" />
               </div>
           </div>
 

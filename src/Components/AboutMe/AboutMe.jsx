@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from '../AboutMe/AboutMe.module.css'
 import aboutme from '../../Images/about.png'
 
 function AboutMe() {
+
+  const [show, setShow] = useState(false)
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 0) {
+      setShow(true)
+    } else if (scrolled <= 0) {
+      setShow(false)
+    }
+  };
+  const scrollToTop = () => {
+    window.scrollTo({
+      bottom: document.documentElement.scrollHeight,
+      behavior: 'auto'
+    });
+  };
+
+  window.addEventListener('scroll', toggleVisible);
   return (
     <div className={classes.About}>
     <div className = 'about component__space'>
@@ -35,7 +53,15 @@ function AboutMe() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+        <div className={classes.UptoTop}>
+          <a href="#" onClick={scrollToTop} style={{display:show ? 'inline' : 'none'}}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-double-up white" viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+            <path fillRule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+          </svg>
+          </a>
+        </div>
     </div>
   </div>
   )
