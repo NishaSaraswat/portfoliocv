@@ -34,7 +34,7 @@ button.about.btn.pointer{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
+    padding-left: 12px;
     padding-top: 10px;
     z-index:1000;
 }

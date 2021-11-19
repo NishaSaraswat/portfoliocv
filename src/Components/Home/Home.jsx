@@ -4,10 +4,11 @@ import logo from '../../Images/logo.png'
 
 
 function Home() {
+  
   return (
-    <div className={classes.Home}>
+    <div className={classes.Home} id="Home">
       <div className={classes.Home__Bg}>
-        <div className="header d__flex align__items__center pxy__30">
+        <div className="header d__flex align__items__center pxy__30" style={{backgroundColor:"#191919",marginTop:'-50px',position:'fixed',width:'100%'}}>
           <div className="logo">
             <img src={logo} alt="logo" style={{ height: 50, width: 60 }} />
           </div>
