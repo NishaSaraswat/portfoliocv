@@ -49,4 +49,57 @@ button.about.btn.pointer{
       transform:translateY(-1px);
   }
 }
- 
+/*Responsive*/
+ @media only screen and (max-width: 1024px){
+   .About p{
+     font-size: 17px;
+     margin-left: -30px;
+   }
+   .About img{
+     margin-top: 110px;
+     margin-left: -50px;
+   }
+ }
+ @media only screen and (max-width: 768px){
+
+.About p{
+     font-size: 15px;
+     margin-left: 10px;
+   }  
+    .About img{
+     margin-top: 5px;
+     margin-left: -90px;
+     width: 420px;
+   }
+   h1.Heading{
+     margin-left: 35%;
+     font-size: 40px;
+   }
+   .About button{
+      width: 125px;
+      height: 35px;
+      font-size: 14px;
+      margin-left: 155%;
+   }
+ }
+  @media only screen and (max-width: 425px){
+.About img{
+     
+     margin-right: 38px;
+     
+   }
+   h1.Heading{
+     margin-left: 22%;
+   }
+    .About button{
+      margin-left: 30%;
+   }
+  }
+  @media only screen and (max-width: 320px){
+.About img{ 
+   width: 140%;
+   }
+   .About button{
+      margin-left: 2%;
+   }
+  }

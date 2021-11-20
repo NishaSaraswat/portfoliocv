@@ -16,29 +16,12 @@ function Projects(props) {
       <div className={classes.Heading}>
         <h1 className={classes.Heading}>My projects</h1>
         <p className="p__color">
-          Lorazepam, sold under the brand name Ativan among others
+         Here are some of my projects!🙂
         </p>
-        <p className="p__color">Lorazepam, sold under the brand name</p>
+        <p className="p__color">Last two projects might not work online so Please check the githubLink,if not it will be live soon!</p>
       </div>
       <div className="container">
           <div className="row">
-            {/* Group projects */}
-          <div className="col__3">
-            <div className={classes.ProjectBox}>
-                <Card img={project6} title="The Shoe Shop"
-                  description="Online shoeshop- learning production-build"
-                  githubLink = "https://github.com/NishaSaraswat/ProjectLeverans"
-                  />
-              </div>
-            </div>
-          <div className="col__3">
-              <div className={classes.ProjectBox}>
-                <Card img={project5} title="Photonic" description="A photo chat app built in react, javascript, mongoDB (Mongoosy) and Nodejs"
-                   githubLink = "https://github.com/NishaSaraswat/Photonic"
-                />
-              </div>
-          </div>
-
             {/* Individual projects */}
           <div className = "col__3">
               <div className={classes.ProjectBox}>
@@ -58,10 +41,30 @@ function Projects(props) {
             <div className="col__3">
               <div className={classes.ProjectBox}>
                 <Card img={project4} title="Movie Search App" description="A simple movie search app using OMBD API"
+                  liveLink = "https://myreactmovies.netlify.app/"
                 githubLink = "https://github.com/NishaSaraswat/ReactApp"
                 />
               </div>
             </div>
+               {/* Group projects */}
+          <div className="col__3">
+            <div className={classes.ProjectBox}>
+                <Card img={project6} title="The Shoe Shop"
+                  description="Online shoeshop- learning production-build"
+                  liveLink = '../../ErrorPage'
+                  githubLink = "https://github.com/NishaSaraswat/ProjectLeverans"
+                  />
+              </div>
+            </div>
+          <div className="col__3">
+              <div className={classes.ProjectBox}>
+                <Card img={project5} title="Photonic" description="A photo chat app built in react, javascript, mongoDB (Mongoosy) and Nodejs"
+                  liveLink = '../../ErrorPage'
+                   githubLink = "https://github.com/NishaSaraswat/Photonic"
+                />
+              </div>
+          </div>
+
         </div>
       </div>
       </div>

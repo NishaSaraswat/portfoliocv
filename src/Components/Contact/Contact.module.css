@@ -47,3 +47,39 @@ textarea{
   width: 100%;
   overflow: hidden;
 }
+ @media only screen and (max-width: 1024px){
+   .Contact img{
+     margin-top: 70px;
+   }
+ }
+ @media only screen and (max-width: 768px){
+   .Contact h1{
+    font-size: 30px;
+    margin-left: 30%;
+  }
+  .Contact p{
+    margin-left: 28%;
+    font-size: small;
+  }
+  .Contact button{
+    margin-left: 27%;
+  }
+  .Contact img{
+  border-radius: 10px;
+  width: 50%;
+  border-radius: 20%;
+  margin-left: 25%;
+  overflow: hidden;
+}
+ }
+ @media only screen and (max-width: 320px){
+    .Contact h1{
+    margin-left: 20%;
+  }
+  .Contact p{
+    margin-left: 18%;
+  }
+  .Contact button{
+    margin-left: 20%;
+  }
+ }
