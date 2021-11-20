@@ -42,16 +42,18 @@ h3.HomeText{
       position: fixed;
       justify-content: center;
       right:0%;
-      background-color: #0101019f;
-      width: 300px;
+      background-color: #010101e1;
+      width: 180px;
       top:0%;
       flex-direction:column;
-      padding-left: 190px;
+      padding-left: 50px;
       margin-top: -100px;
+     
 }
 .SideNavBar li{
   padding: 25px 30px;
   color: darkorange;
+  
 }
 .ToogleMenu{
   display:none;
@@ -80,7 +82,7 @@ h3.HomeText{
      display: flex;
      justify-content: flex-end;
      float: right;
-     z-index: 1000;
+     z-index:1000;
    };
  }
  @media only screen and (max-width: 425px){
