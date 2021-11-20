@@ -5,7 +5,7 @@ import logo from '../../Images/logo.png'
 
 function Home() {
   //Toogle Menu
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   return (
     <div className={classes.Home} id="Home">
       <div className={classes.Home__Bg}>
