@@ -7,7 +7,7 @@ function Cards(props) {
           <div className={classes.flipCard}>
               <div className={classes.flipCardInner}>
               <div className={classes.flipCardFront}>
-                <img src={props.img} alt="project" style={{ width: 220, height: 262,objectFit:'cover',borderRadius: 10}}/>
+                <img src={props.img} alt="project" style={{ width: 262, height: 280,objectFit:'cover',borderRadius: 10}}/>
               </div>
             <div className={classes.flipCardBack}>
             <p>{props.title}
