@@ -20,7 +20,7 @@ function Contact() {
     console.log(inputValue)
   }
   const sendEmail = (e) => {
-     e.preventDefault();
+    //  e.preventDefault();
 
     emailjs.sendForm('service_v406att', 'template_7oxkd99', e.target, 'user_PZWxdoAhnf3K7WNNLym0P')
       .then((result) => {
