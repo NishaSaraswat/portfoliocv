@@ -47,7 +47,7 @@ function Contact() {
                   <input name="name" value={inputValue.name} type="text" className="contact name" placeholder="Your name *" onChange={handleChange} required={true} autocomplete="off"/>
                   <input name="email" value={inputValue.email} type="email" className="contact email" placeholder="Your Email *" onChange={handleChange} required={true} autocomplete="off"/>
                           <textarea name="message" value={inputValue.message} id="message" placeholder="Write Your message" onChange={handleChange} required={true}></textarea>
-                         <a><button className="btn contact pointer" type="submit">Send</button></a>
+                         <a><button className="btn contact pointer" type="submit" onClick={sendEmail}>Send</button></a>
               </div>
               </form>
             </div>
